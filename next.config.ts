@@ -5,6 +5,7 @@ const config: NextConfig = {
   trailingSlash: true,
   images: { unoptimized: true },
   reactStrictMode: true,
+  experimental: { agentUpgrade: "security" },
 };
 
 export default config;
