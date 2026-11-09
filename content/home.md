@@ -71,7 +71,7 @@ I am interested in full-stack and backend engineering roles where I can take res
 
 ### Deliverit — Full Stack Software Engineer
 
-**June 2025–Present · UAE**
+**June 2025–November 2026 · UAE**
 
 Same role continued from Kemo Digital; Deliverit platform work since late 2023.
 

@@ -26,7 +26,7 @@ export const site = {
 
   linkedinUrl: "https://www.linkedin.com/in/waseem-alnasser-887185251" as string | null,
   githubUrl: null as string | null,
-  portrait: null as string | null,
+  portrait: "/images/portrait.webp" as string | null,
 
   /** Public paths under /public. Null hides the download button. */
   cv: {
@@ -35,10 +35,10 @@ export const site = {
   },
 
   /** Availability line shown in Contact. Update it yourself; null hides it. */
-  availableFrom: "7 November 2026" as string | null,
+  availableFrom: "Available Immediately" as string | null,
 
   /** Leave null to show "Present"; once the end is confirmed, set e.g. "November 2026". */
-  deliveritEnd: null as string | null,
+  deliveritEnd: "November 2026" as string | null,
 
   /** Verified public project/store links. Null hides the link. */
   projectUrls: {

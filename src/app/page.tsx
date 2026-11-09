@@ -115,10 +115,23 @@ export default function HomePage() {
       <section id="about" aria-labelledby="about-heading" className="border-t border-line bg-card py-16 md:py-20">
         <div className="container-page">
           <Heading id="about-heading">About</Heading>
-          <div className="prose-article mt-6 space-y-4 text-lg">
-            {home.about.map((p) => (
-              <p key={p} dangerouslySetInnerHTML={{ __html: mdInline(p) }} />
-            ))}
+          <div className="mt-6 grid gap-8 md:grid-cols-[1fr_auto] md:items-start md:gap-12">
+            <div className="prose-article space-y-4 text-lg">
+              {home.about.map((p) => (
+                <p key={p} dangerouslySetInnerHTML={{ __html: mdInline(p) }} />
+              ))}
+            </div>
+            {site.portrait && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={site.portrait}
+                alt={`Portrait of ${site.name}`}
+                width={800}
+                height={800}
+                loading="lazy"
+                className="order-first h-40 w-40 rounded-2xl border border-line object-cover md:order-none md:h-56 md:w-56"
+              />
+            )}
           </div>
         </div>
       </section>
@@ -193,7 +206,7 @@ export default function HomePage() {
               ))}
             </div>
           )}
-          {site.availableFrom && <p className="mt-4 font-medium">Available from {site.availableFrom}.</p>}
+          {site.availableFrom && <p className="mt-4 font-medium">{site.availableFrom}</p>}
           <p className="mt-6">{site.location}</p>
           <ul className="mt-2 space-y-1 text-lg">
             <li>
